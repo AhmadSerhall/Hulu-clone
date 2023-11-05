@@ -1,4 +1,4 @@
-*{
+/* *{
     padding:0;
     margin:0;
     border:0;
@@ -8,20 +8,28 @@
 .page{
     overflow-x: hidden;
 }
-.main-image img{
+.main-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.main-image .hulu-image img{
     width:100vw;
     height:100vh;
 }
+
  .logo{
-    width:20vw;
-    height:60px;
-    position:absolute;
+    position: absolute;
+    width:100px;
+    height:100px;
+    
     top:20px;
     left:10px;
 
 }
 .login-btn-border{
-     border:hidden;
     font-family: "Graphik Web",sans-serif; 
     position:absolute;
     top:30px;
@@ -36,7 +44,7 @@
     color:#A8AFBD;
     font-size:14px;
     letter-spacing: 0.6px;
-    /* background-color: transparent; */
+    
 }
 .login-btn-border:hover{
     cursor:pointer;
@@ -44,18 +52,207 @@
     border-radius: 5px;
     border:0.4;
 }
-.container{
+
+ .left-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin:60px 40px;
-}
-.container .left-container{
     text-align: center;
+    top:30px;
 }
-.left-container .container-text{
+ .left-container p{
     position: absolute;
-    font-size:14px;
-    padding:10px;
+    font-weight: 600;
+    font-size:12px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+*{
+box-sizing: border-box;
+margin: 0;
+padding:0;
 }
+html,body{
+font-family:'Rubik', sans-serif ;
+background: black;
+color: white;
+line-height: 1.7;
+overflow-x: hidden;
+}
+ul{
+list-style-type: none;
+}
+img{
+width:100%;
+}
+.header{
+background:url();
+
+}
+.top{
+height: 510px;
+}
+.top nav{
+display:flex;
+justify-content: flex-end;
+padding: 20px 40px;
+}
+.top nav .login{
+cursor:pointer;
+background: none;
+border: none;
+color:white;
+font-weight: bold;
+letter-spacing: 1px;
+}
+.top .logo{
+width: 550px;
+margin: 20px 0;
+}
+.top .header_main{
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+margin-top: 40px;
+}
+.top .header_1{
+font-size: 19px;
+font-weight: bold;
+width: 600px;
+text-align: center;
+line-height: 27px;
+}
+.btn{
+display: inline-block;
+background: #1ce783;
+color: #333;
+min-width: 135px;
+padding: 18px 30px;
+font-size: 13px;
+font-weight:bold;
+border: none;
+border-radius: 5px;
+letter-spacing: 1px;
+cursor:pointer;
+/* width:120px; */
+}
+.btn-1{
+margin-top: 25px;
+}
+.btn-1:hover{
+opacity: 0.8;
+}
+.terms{
+font-size: 9px;
+color:rgb(190, 190, 190);
+margin-top: 20px;
+letter-spacing: 0.3px;
+}
+.terms_1{
+text-decoration:underline;
+}
+h4{
+color:#00ed82;
+font-size: 12px;
+letter-spacing: 0.3px;
+font-weight:500;
+}
+/*Categories*/
+.library-h4{
+    font-size: 14px;
+    }
+    .text-li{
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 0.1px;
+    }
+    .sub-text{
+    max-width:850px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    width:750px;
+    }
+    .library{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 90px 40px;
+    justify-content:center ;
+    }
+    .library .covers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
+    gap:20px;
+    }
+    .library .covers > div{
+    height: 400px;
+    width: 265px;
+    position: relative;
+    }
+    .library .cover-grad{
+    background: linear-gradient(
+    156.82deg,
+    rgba(0, 0, 0, 0.6) 4.58%,
+    rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    .library .cover-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+    }
+    .library .cover-1 {
+    background: url(https://cnbl-cdn.bamgrid.com/assets/82fd53644e709344c9e9c1f4ba66519505ecea256294d59a0637bda76ae1436b/original) no-repeat center center / cover;
+    
+    }
+    .library .cover-2 {
+    background: url(https://cnbl-cdn.bamgrid.com/assets/8c630a19daa8615918152082839724f4dab6538939ba7d3bb45f8faa97acf1b9/original) no-repeat center center / cover;
+    }
+    .library .cover-3 {
+    background: url(https://cnbl-cdn.bamgrid.com/assets/6293f29d56ae0519362951fa38cf62f61004662eb674e61d99e93e7f064d74ff/original) no-repeat center center / cover;
+    }
+    .library .cover-4 {
+    background: url(https://cnbl-cdn.bamgrid.com/assets/f3f84cde435747f424ce4ad52d351efc96b5da4765af2f76afa9b86fb5bc9a37/original) no-repeat center center / cover;
+    }
+    .cover-sub-text{
+    font-weight: bolder;
+    line-height: 4px;
+    }
+    .sub-title{
+    font-size: 15px;
+    }
+    /* Live */
+    .live {
+    background: #151516;
+    padding: 40px;
+    }
+    .live-border {
+    border: 4px solid #1ce783;
+    border-radius: 16px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+    .live .sub-text{
+    font-size: 23px;
+    width: 640px;
+    }
+    .live a {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+    color:rgb(172, 172, 172);
+    }
