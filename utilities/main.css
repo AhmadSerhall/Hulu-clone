@@ -1,70 +1,4 @@
-/* *{
-    padding:0;
-    margin:0;
-    border:0;
-    box-sizing: border-box;
-}
 
-.page{
-    overflow-x: hidden;
-}
-.main-image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    flex-wrap: wrap;
-}
-.main-image .hulu-image img{
-    width:100vw;
-    height:100vh;
-}
-
- .logo{
-    position: absolute;
-    width:100px;
-    height:100px;
-    
-    top:20px;
-    left:10px;
-
-}
-.login-btn-border{
-    font-family: "Graphik Web",sans-serif; 
-    position:absolute;
-    top:30px;
-    right:30px;
-     width:70px;
-    height:20px;
-    color:transparent;
-    background-color: transparent;
-    
-}
-.login-btn-border .btn-text{
-    color:#A8AFBD;
-    font-size:14px;
-    letter-spacing: 0.6px;
-    
-}
-.login-btn-border:hover{
-    cursor:pointer;
-    background-color: white;
-    border-radius: 5px;
-    border:0.4;
-}
-
- .left-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    top:30px;
-}
- .left-container p{
-    position: absolute;
-    font-weight: 600;
-    font-size:12px;
-} */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
 *{
 box-sizing: border-box;
@@ -78,6 +12,14 @@ color: white;
 line-height: 1.7;
 overflow-x: hidden;
 }
+/* .logo img{
+position: absolute;
+width:10px;
+height:10px;
+
+top:20px;
+left:10px;
+} */
 ul{
 list-style-type: none;
 }
@@ -85,11 +27,13 @@ img{
 width:100%;
 }
 .header{
-background:url();
+background:url(https://cnbl-cdn.bamgrid.com/assets/62ed936344e6ffbac48c896b2bd327fe171521dd941b6ddc8402e2eae50116fc/original);
 
 }
 .top{
 height: 510px;
+
+
 }
 .top nav{
 display:flex;
@@ -151,6 +95,12 @@ letter-spacing: 0.3px;
 .terms_1{
 text-decoration:underline;
 }
+.terms_1 a{
+    color:white;
+}
+.terms_1 a:hover{
+    color:grey;
+}
 h4{
 color:#00ed82;
 font-size: 12px;
@@ -159,100 +109,159 @@ font-weight:500;
 }
 /*Categories*/
 .library-h4{
-    font-size: 14px;
-    }
-    .text-li{
-    font-size: 60px;
-    font-weight: bolder;
-    letter-spacing: 0.1px;
-    }
-    .sub-text{
-    max-width:850px;
-    margin-bottom: 10px;
-    font-size: 19px;
-    width:750px;
-    }
-    .library{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 90px 40px;
-    justify-content:center ;
-    }
-    .library .covers{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-top: 40px;
-    gap:20px;
-    }
-    .library .covers > div{
-    height: 400px;
-    width: 265px;
-    position: relative;
-    }
-    .library .cover-grad{
-    background: linear-gradient(
-    156.82deg,
-    rgba(0, 0, 0, 0.6) 4.58%,
-    rgba(0, 0, 0, 0) 69.61%
-    ),
-    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    }
-    .library .cover-text {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: left;
-    }
-    .library .cover-1 {
-    background: url(https://cnbl-cdn.bamgrid.com/assets/82fd53644e709344c9e9c1f4ba66519505ecea256294d59a0637bda76ae1436b/original) no-repeat center center / cover;
-    
-    }
-    .library .cover-2 {
-    background: url(https://cnbl-cdn.bamgrid.com/assets/8c630a19daa8615918152082839724f4dab6538939ba7d3bb45f8faa97acf1b9/original) no-repeat center center / cover;
-    }
-    .library .cover-3 {
-    background: url(https://cnbl-cdn.bamgrid.com/assets/6293f29d56ae0519362951fa38cf62f61004662eb674e61d99e93e7f064d74ff/original) no-repeat center center / cover;
-    }
-    .library .cover-4 {
-    background: url(https://cnbl-cdn.bamgrid.com/assets/f3f84cde435747f424ce4ad52d351efc96b5da4765af2f76afa9b86fb5bc9a37/original) no-repeat center center / cover;
-    }
-    .cover-sub-text{
-    font-weight: bolder;
-    line-height: 4px;
-    }
-    .sub-title{
-    font-size: 15px;
-    }
-    /* Live */
-    .live {
-    background: #151516;
-    padding: 40px;
-    }
-    .live-border {
-    border: 4px solid #1ce783;
-    border-radius: 16px;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    }
-    .live .sub-text{
-    font-size: 23px;
-    width: 640px;
-    }
-    .live a {
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-top: 20px;
+font-size: 14px;
+}
+.text-li{
+font-size: 60px;
+font-weight: bolder;
+letter-spacing: 0.1px;
+}
+.sub-text{
+max-width:850px;
+margin-bottom: 10px;
+font-size: 19px;
+width:750px;
+}
+.library{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 90px 40px;
+justify-content:center ;
+}
+.library .covers{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+margin-top: 40px;
+gap:20px;
+}
+.library .covers > div{
+height: 400px;
+width: 265px;
+position: relative;
+cursor: pointer;
+}
+.library .covers:hover{
+    border-color: 2px white;
+}
+.library .cover-grad{
+background: linear-gradient(
+156.82deg,
+rgba(0, 0, 0, 0.6) 4.58%,
+rgba(0, 0, 0, 0) 69.61%
+),
+linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.library .cover-text {
+position: absolute;
+top: 20px;
+left: 20px;
+text-align: left;
+}
+.library .cover-1 {
+background: url(https://cnbl-cdn.bamgrid.com/assets/82fd53644e709344c9e9c1f4ba66519505ecea256294d59a0637bda76ae1436b/original) no-repeat center center / cover;
+
+}
+.library .cover-2 {
+background: url(https://cnbl-cdn.bamgrid.com/assets/8c630a19daa8615918152082839724f4dab6538939ba7d3bb45f8faa97acf1b9/original) no-repeat center center / cover;
+}
+.library .cover-3 {
+background: url(https://cnbl-cdn.bamgrid.com/assets/6293f29d56ae0519362951fa38cf62f61004662eb674e61d99e93e7f064d74ff/original) no-repeat center center / cover;
+}
+.library .cover-4 {
+background: url(https://cnbl-cdn.bamgrid.com/assets/f3f84cde435747f424ce4ad52d351efc96b5da4765af2f76afa9b86fb5bc9a37/original) no-repeat center center / cover;
+}
+.cover-sub-text{
+font-weight: bolder;
+line-height: 4px;
+}
+.sub-title{
+font-size: 15px;
+}
+/* Live */
+.live {
+background: #151516;
+padding: 40px;
+}
+.live-border {
+/* border: 4px solid #1ce783; */
+border-radius: 16px;
+padding: 100px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.live .sub-text{
+font-size: 23px;
+width: 640px;
+}
+.live a {
+text-transform: uppercase;
+font-size: 18px;
+margin-top: 20px;
+text-decoration: underline;
+color:rgb(172, 172, 172);
+}
+/* live-sports */
+.live-sports {
+background: url(https://cnbl-cdn.bamgrid.com/assets/3ab6ce86baaf4225b072c58fa9497ec949c0c9e284b3958ecda1429b7f3744f9/original) no-repeat center center / cover;
+height: 700px;
+position: relative;
+}
+.live-sports-content {
+position: absolute;
+top: 160px;
+left: 200px;
+max-width: 550px;
+}
+.live-sports .sub-text{
+font-size: 23px;
+width: 450px;
+}
+/* Footer */
+.footer {
+background: #ebedf2;
+color: #333;
+}
+.footer a {
+color: rgb(107, 107, 107);
+font-size: 12px;
+text-decoration: none;
+}
+.footer a:hover{
     text-decoration: underline;
-    color:rgb(172, 172, 172);
-    }
+}
+.footer-container {
+max-width: 1100px;
+margin: auto;
+padding: 40px;
+}
+.footer-lists {
+display: flex;
+justify-content: space-between;
+}
+.footer-lists .list-head {
+text-transform: uppercase;
+font-weight: 600;
+margin-bottom: 5px;
+font-size: 12px;
+}
+.divider {
+width: 100%;
+height: 3px;
+border-top: 1px #ccc solid;
+margin: 30px 0;
+}
+.social-icons img {
+width: 20px;
+height: 20px;
+margin-right: 25px;
+}
